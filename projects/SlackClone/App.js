@@ -48,9 +48,13 @@ const ModalStack = createStackNavigator();
 
 const chatClient = ChatClientStore.client;
 const defaultUser = {
-  id: USER_ID,
-  token: USER_TOKEN,
+  id: 'ben',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiYmVuIn0.RmhzIyHTFgntyJ-yGJznqWgZftnrs1VoUdPx8S0QrkQ',
 };
+// const defaultUser = {
+//   id: USER_ID,
+//   token: USER_TOKEN,
+// };
 
 export default () => {
   const scheme = useColorScheme();
@@ -174,12 +178,12 @@ const HomeStackNavigator = () => (
     <HomeStack.Screen
       component={ChannelListScreen}
       name="ChannelListScreen"
-      options={{headerShown: false}}
+      // options={{headerShown: false}}
     />
     <HomeStack.Screen
       component={ChannelScreen}
       name="ChannelScreen"
-      options={{headerShown: false}}
+      // options={{headerShown: false}}
     />
     <HomeStack.Screen
       component={DraftsScreen}
